@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Visualization 2: City Latitude vs. Humidity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+  crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand">
+                    <p>Latitude Climate Visualizations <span class="glyphicon glyphicon-cloud"></span></p>    
+                </a>
+                <div class="dropdown" clearfix>
+                        <button class="btn btn-primary pull-right" type="button" id="data_button" pull-right>
+                        Data
+                        </button>
+                        <button class="btn btn-primary pull-right" type="button" id="comparison_button" pull-right>
+                        Comparison
+                        </button>
+                        <div class="dropdown-container">
+                                <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Max Temperature</a></li>
+                                    <li><a href="#">Humidity</a></li>
+                                    <li><a href="#">Cloudiness</a></li>
+                                    <li><a href="#">Wind Speed</a></li>
+                                </ul>
+                            <button class="btn btn-primary dropdown-toggle pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true">
+                            Plots
+                            <span class="caret"></span>
+                            </button>
+                        </div>
+                </div>
+            </nav>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>City Latitude vs. Humidity</h1>
+            </div>
+        </div>
+
+        <div class="main_image">
+          <div class="col-md-12">
+            <img src="Resources/assets/images/fig2.png" class="img-fluid" alt="Figure 2 Scatterplot (City lat. vs Humidity">
+          </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-12">
+                  <div class="summary_paragraph">When observing the scatterplot of city latitude vs humidity, 
+                      there seems to be a cluster of cities at humidity levels above 60% on this day, but a 
+                      weak relationship with latitude except for a small chart area around the equator with 
+                      no cities represented until you rise to around 50% humidity and above. This could mean 
+                      that areas around the equator inside of the -10 to 10 degrees latitude bounds are generally 
+                      drier. Again, on this chart the cities are skewed towards the global north. 
+                  </div>
+              </div>
+        </div>
+
+</body>
+
+</html>
