@@ -7,7 +7,7 @@ External CSS Stylesheet
   position: relative !important;
 }
 
-.dropdown-menu {
+.dropdown-menu pull-right {
   position: absolute !important;
   top: 100% !important; /* Bottom of button */
   right: 0 !important;
