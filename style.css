@@ -12,3 +12,8 @@ External CSS Stylesheet
   top: 100% !important; /* Bottom of button */
   right: 0 !important;
 }
+
+@media only screen and (max-width: 480px)
+.navbar {
+  background-color: lightblue;
+}
