@@ -18,33 +18,35 @@
 
 <body>
 
-    <div class="container">
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand">
-                    <p>Latitude Climate Visualizations! <span class="glyphicon glyphicon-cloud"></span></p>    
+  <div class="container">
+          <nav class="navbar navbar-light bg-light">
+              <a class="navbar-brand">
+                <a href="index.html" class="btn btn-link pull-left">Latitude Climate Visualizations Homepage! 
+                    <span class="glyphicon glyphicon-cloud"></span>
+                  </a>    
+              </a>
+              <div class="dropdown" clearfix>
+                <a href="Data.html" class="btn btn-primary pull-right" role="button" type="button" id="data_button" pull-right>
+                  Data
                 </a>
-                <div class="dropdown" clearfix>
-                        <button class="btn btn-primary pull-right" type="button" id="data_button" pull-right>
-                        Data
-                        </button>
-                        <button class="btn btn-primary pull-right" type="button" id="comparison_button" pull-right>
-                        Comparison
-                        </button>
-                        <div class="dropdown-container">
-                                <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">Max Temperature</a></li>
-                                    <li><a href="#">Humidity</a></li>
-                                    <li><a href="#">Cloudiness</a></li>
-                                    <li><a href="#">Wind Speed</a></li>
-                                </ul>
-                            <button class="btn btn-primary dropdown-toggle pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="true">
-                            Plots
-                            <span class="caret"></span>
-                            </button>
-                        </div>
-                </div>
-            </nav>
+                <a href="Comparisons.html" class="btn btn-primary pull-right" role="button" type="button" id="comparison_button" pull-right>
+                  Comparison
+                </a>
+              <div class="dropdown-container">
+                <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                    <li><a href="Visualization_1.html">Max Temperature</a></li>
+                    <li><a href="Visualization_2.html">Humidity</a></li>
+                    <li><a href="Visualization_3.html">Cloudiness</a></li>
+                    <li><a href="Visualization_4.html">Wind Speed</a></li>
+                </ul>
+                <button class="btn btn-primary dropdown-toggle pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+                Plots
+                <span class="caret"></span>
+                </button>
+              </div>
+            </div>
+          </nav>
 
         <div class="row">
             <div class="col-xs-12">
@@ -53,38 +55,42 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
-            <img src="Resources/assets/images/Fig1.png" class="img-fluid" alt="Figure 1 Scatterplot (City lat. vs Max temp)">
+            <div class="col-md-12">
+              <h4>This report analyzes weather data for more than 500 random cities to help 
+                answer the question of how weather changes as you approach the equator. This is primarily an analysis 
+                of the relation of latitude to four different weather parameters, namely temperature, humidity, 
+                cloudiness, and wind speed. The data gathered for this analysis is from November 3, 2018, using the 
+                free version of the Open Weather Map API for current weather data.   
+              </h4>
           </div>
-<!--           <div class="offset-md-4">
-          </div> -->
-          <div class="col-md-6">
-            <img src="Resources/assets/images/Fig2.png" class="img-fluid" alt="Figure 2 Scatterplot (City lat. vs Humidity)">
+      
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <a href="Visualization_1.html">
+              <img src="Resources/assets/images/Fig1.png" class="img-thumbnail img-fluid" alt="Figure 1 Scatterplot (City lat. vs Max temp)">
+            </a>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <a href="Visualization_2.html">
+              <img src="Resources/assets/images/Fig2.png" class="img-thumbnail img-fluid" alt="Figure 2 Scatterplot (City lat. vs Humidity)">
+            </div>
           </div>
         </div>
 
 
         <div class="row">
-          <div class="col-md-4">
-            <img src="Resources/assets/images/Fig3.png" class="img-fluid" alt="Figure 3 Scatterplot (City lat. vs Cloudiness)">
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <a href="Visualization_3.html">
+              <img src="Resources/assets/images/Fig3.png" class="img-thumbnail img-fluid" alt="Figure 3 Scatterplot (City lat. vs Cloudiness)">
+            </a>
           </div>
-          <div class="offset-md-4">
-          </div>
-          <div class="col-md-4">
-            <img src="Resources/assets/images/Fig4.png" class="img-fluid" alt="Figure 4 Scatterplot (City lat. vs Wind Speed)">
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <a href="Visualization_4.html">
+            <img src="Resources/assets/images/Fig4.png" class="img-thumbnail img-fluid" alt="Figure 4 Scatterplot (City lat. vs Wind Speed)">
+            </a>
           </div>
         </div>
-
-        <div class="row">
-                <div class="col-md-12">
-                  <div class="summary_paragraph">This report analyzes weather data for more than 500 random cities to help 
-                    answer the question of how weather changes as you approach the equator. This is primarily an analysis 
-                    of the relation of latitude to four different weather parameters, namely temperature, humidity, 
-                    cloudiness, and wind speed. The data gathered for this analysis is from November 3, 2018, using the 
-                    free version of the Open Weather Map API for current weather data.   
-                  </div>
-              </div>
-        </div>
+    </div>
         
 </body>
 
