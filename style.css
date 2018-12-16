@@ -4,11 +4,11 @@ External CSS Stylesheet
 
 /* Styling for HTML elements */
 .dropdown-container {
-  position: relative;
+  position: relative !important;
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%; /* Bottom of button */
-  right: 0;
+  position: absolute !important;
+  top: 100% !important; /* Bottom of button */
+  right: 0 !important;
 }
