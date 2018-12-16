@@ -13,7 +13,13 @@ External CSS Stylesheet
   right: 0 !important;
 }
 
-@media only screen and (max-width: 480px)
-.navbar {
-  background-color: lightblue;
+@media only screen and (max-width: 480px){
+  .navbar {
+  background-color: lightblue !important;
+}
+
+@media only screen and (orientation: landscape) {
+  .navbar {
+    background-color: lightblue !important;
+  }
 }
